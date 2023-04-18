@@ -1,7 +1,13 @@
-# Vue 3 + Vite
+Kulan Oil - Тестовое задание
+Для запуска проекта необходимо выполнить следующие действия:
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Клонировать проект - git clone git@github.com:alidarovolj/kulanOil.git (необходимо наличие Git)
+Установить все необходимые модули, запустив команду npm install (необходимо наличие NodeJS + npm)
+После установки запустить команду npm run dev
+Стек проекта
+Проект выполнен на основе Vue 3 + Vite. Данное решение было принято для оптимизации проекта (избавление от лишних модулей) и настройки среды Vue + скорость сборки.
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Структура проекта
+Основные модули в проекте: Vue Router, Vue Meta, Tailwind.
+Необходимые данные по городам и расстояниям находятся в корне проекта, в файле db.json.
+Проект поделен на глобальные (/components) и локальные (/views/СТРАНИЦА/components) модули.
