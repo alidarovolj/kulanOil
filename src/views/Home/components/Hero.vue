@@ -48,25 +48,27 @@
 </template>
 
 <script>
+import { defineComponent } from "vue";
 import Button from "@/components/Button.vue";
 import Search from "./Search.vue";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 
-export default {
+export default defineComponent({
   name: "HeroSection",
-  data() {
-    return {
-      breakpoints: {
-        0: {
-          itemsToShow: 1,
-          snapAlign: "center",
-        },
-        1024: {
-          itemsToShow: 1,
-          snapAlign: "start",
-        },
+  setup() {
+    const breakpoints = {
+      0: {
+        itemsToShow: 1,
+        snapAlign: "center",
       },
+      1024: {
+        itemsToShow: 1,
+        snapAlign: "start",
+      },
+    };
+    return {
+      breakpoints,
     };
   },
   components: {
@@ -77,5 +79,5 @@ export default {
     Pagination,
     Navigation,
   },
-};
+});
 </script>
