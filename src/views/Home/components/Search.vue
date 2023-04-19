@@ -165,7 +165,7 @@
               title="Рассчитать стоимость"
             />
           </div>
-          <div class="block lg:flex" v-if="price">
+          <div class="block lg:flex" v-if="price && activeBlock == 1">
             <div class="flex mr-0 lg:mr-10 mb-3 lg:mb-0">
               <i
                 class="fa-sharp fa-solid fa-map-pin text-lg text-secondaryColor mr-2"
